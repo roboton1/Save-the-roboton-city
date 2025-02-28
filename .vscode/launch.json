@@ -1,0 +1,29 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "webRoot": "${workspaceFolder}",
+            "file": "${workspaceRoot}/index.html",
+            "runtimeArgs": [
+                "--allow-file-access-from-files",
+                "--remote-debugging-port=9222",
+                "--autoplay-policy=no-user-gesture-required"
+            ]
+        },
+        {
+            "name": "Launch NWjs",
+            "type": "nwjs",
+            "request": "launch",
+            "nwjsVersion": "any",
+            "webRoot": "${workspaceFolder}",
+            "reloadAfterAttached": true,
+            "runtimeArgs": [ "${workspaceFolder}", "test" ]
+        }
+    ]
+}
