@@ -1,6 +1,6 @@
 //=============================================================================
 // Keke_BattleEventPlus - バトルイベントプラス
-// バージョン: 1.0.3
+// バージョン: 1.0.4
 //=============================================================================
 // Copyright (c) 2023 ケケー
 // Released under the MIT license
@@ -14,7 +14,7 @@
  * @url https://kekeelabo.com
  * 
  * @help
- * 【ver.1.0.3】
+ * 【ver.1.0.4】
  * 色々なタイミングでバトルイベントを起動できるようにする
  * 実質的にほぼバトル中いつでもバトルイベントの起動が可能
  * 
@@ -189,6 +189,15 @@
 
 
     //==================================================
+    //--  ファイル変数
+    //==================================================
+
+    // ハンドラ実行中フラグ
+    let RunningHandler = false;
+
+
+
+    //==================================================
     //--  バトルイベントの呼び出し機会を追加
     //==================================================
 
@@ -266,7 +275,7 @@
         // 敵撃破時にバトルイベントをセットアップ
         
         // ハンドラ実行中なら飛ばして本来の処理を実行
-        if (!runningHandler) {
+        if (!RunningHandler) {
             $gameTroop._battleEventRunKeBevp = false;
             // イベント後ハンドラがあるならリターン
             //if ($gameTroop._eventAfterHandlerKeBevp) { return; }
@@ -349,8 +358,8 @@
         if (this._stopBattleEndKeBevp) { return; }
         $gameTroop._battleEventRunKeBevp = false;
         // すでにバトルイベント開始済みなら再実行しない
-        const word = $gameParty.isAllDead() ? "defeat" : "victory";
-        if (!this[`_${word}AfterStartedKeBevp`]) {
+        const word = $gameParty.isAllDead() ? "defeat" : !this._escaped ? "victory" : "";
+        if (word && !this[`_${word}AfterStartedKeBevp`]) {
             // 勝利フラグをオン
             this[`_${word}AfterKeBevp`] = true;
             // バトルイベントのセットアップ
@@ -414,9 +423,6 @@
     //--  イベント終了時の追加処理
     //==================================================
 
-    // ハンドラ実行中フラグ
-    let runningHandler = false;
-
     //- ゲームトループ/インタープリターの更新
     const _Game_Troop_updateInterpreter = Game_Troop.prototype.updateInterpreter;
     Game_Troop.prototype.updateInterpreter = function() {
@@ -426,9 +432,9 @@
         if (preRunning && !this._interpreter.isRunning()) {
             // イベント後ハンドラを実行
             if (this._eventAfterHandlerKeBevp) {
-                runningHandler = true;
+                RunningHandler = true;
                 this._eventAfterHandlerKeBevp();
-                runningHandler = null;
+                RunningHandler = null;
                 // ハンドラを消去
                 this._eventAfterHandlerKeBevp = null;
             }
