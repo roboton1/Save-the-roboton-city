@@ -5,7 +5,7 @@ null,
 {"id":3,"battlerName":"Actor1_3","characterIndex":0,"characterName":"DOB","classId":5,"equips":[0,0,65,6,0],"faceIndex":0,"faceName":"DOB","traits":[],"initialLevel":9,"maxLevel":99,"name":"ドブ","nickname":"","note":"","profile":""},
 {"id":4,"battlerName":"","characterIndex":0,"characterName":"Nature","classId":8,"equips":[0,0,0,3,0],"faceIndex":0,"faceName":"Nature","traits":[],"initialLevel":11,"maxLevel":99,"name":"おばか犬","nickname":"","note":"","profile":""},
 {"id":5,"battlerName":"Actor1_5","characterIndex":0,"characterName":"Ball","classId":1,"equips":[43,0,0,20,0],"faceIndex":2,"faceName":"ataoka","traits":[],"initialLevel":1,"maxLevel":99,"name":"ロボトンボール","nickname":"","note":"","profile":""},
-{"id":6,"battlerName":"Actor1_6","characterIndex":5,"characterName":"Actor1","classId":2,"equips":[7,0,65,21,0],"faceIndex":5,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"ケイシー","nickname":"","note":"","profile":""},
+{"id":6,"battlerName":"Actor1_6","characterIndex":1,"characterName":"20241216-1625_57a23be742abea1394e76f76d497998f","classId":2,"equips":[7,0,0,3,0],"faceIndex":1,"faceName":"ataoka","traits":[],"initialLevel":1,"maxLevel":99,"name":"ロボトンおじさん","nickname":"","note":"","profile":""},
 {"id":7,"battlerName":"Actor1_7","characterIndex":6,"characterName":"Actor1","classId":3,"equips":[7,0,0,20,0],"faceIndex":6,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"エリオット","nickname":"","note":"","profile":""},
 {"id":8,"battlerName":"Actor1_8","characterIndex":7,"characterName":"Actor1","classId":3,"equips":[7,0,0,20,0],"faceIndex":7,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"ローザ","nickname":"","note":"","profile":""}
 ]
