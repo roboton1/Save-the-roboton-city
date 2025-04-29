@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":false,"name":"Mission","order":1,"parentId":0,"scrollX":534,"scrollY":1090.5},
-{"id":2,"expanded":true,"name":"ロボトン外","order":2,"parentId":0,"scrollX":534,"scrollY":293.5,"quick":false},
+{"id":2,"expanded":true,"name":"ロボトン外","order":2,"parentId":0,"scrollX":1563,"scrollY":293.5,"quick":false},
 {"id":3,"expanded":true,"name":"ハッピー畑","order":5,"parentId":2,"scrollX":534,"scrollY":1799.5,"quick":false},
 {"id":4,"expanded":false,"name":"キッズ向け登山","order":6,"parentId":3,"scrollX":534,"scrollY":1858.5,"quick":false},
 {"id":5,"expanded":true,"name":"Downtown","order":7,"parentId":2,"scrollX":1278,"scrollY":2579.5,"quick":false},
@@ -12,6 +12,6 @@ null,
 {"id":10,"expanded":false,"name":"カジノ","order":13,"parentId":9,"scrollX":534,"scrollY":990.5,"quick":false},
 {"id":11,"expanded":false,"name":"ロボタワー","order":10,"parentId":5,"scrollX":534,"scrollY":895.5,"quick":false},
 {"id":12,"expanded":false,"name":"MAP012","order":14,"parentId":2,"scrollX":534,"scrollY":658.5,"quick":false},
-{"id":13,"expanded":true,"name":"カラカラ","order":3,"parentId":2,"scrollX":782,"scrollY":666.5,"quick":false},
+{"id":13,"expanded":true,"name":"カラカラ","order":3,"parentId":2,"scrollX":906,"scrollY":666.5,"quick":false},
 {"id":14,"expanded":false,"name":"家","order":4,"parentId":13,"scrollX":534,"scrollY":293.5,"quick":false}
 ]
