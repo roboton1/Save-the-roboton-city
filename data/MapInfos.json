@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":false,"name":"Mission","order":1,"parentId":0,"scrollX":534,"scrollY":1090.5},
-{"id":2,"expanded":true,"name":"ロボトン外","order":2,"parentId":0,"scrollX":1563,"scrollY":293.5,"quick":false},
+{"id":2,"expanded":true,"name":"ロボトン外","order":2,"parentId":0,"scrollX":1563,"scrollY":301.5,"quick":false},
 {"id":3,"expanded":true,"name":"ハッピー畑","order":5,"parentId":2,"scrollX":534,"scrollY":1799.5,"quick":false},
 {"id":4,"expanded":false,"name":"キッズ向け登山","order":6,"parentId":3,"scrollX":534,"scrollY":1858.5,"quick":false},
 {"id":5,"expanded":true,"name":"Downtown","order":7,"parentId":2,"scrollX":1278,"scrollY":2579.5,"quick":false},
